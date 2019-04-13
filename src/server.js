@@ -16,6 +16,8 @@ io.on("connection", socket => {
     })
 });
 
+  //   mongodb+srv://mongo-user_01:<password>@cluster0-0a779.mongodb.net/test?retryWrites=true
+
 
 mongoose.connect(
     'mongodb+srv://mongo-user_01:fdm2019@cluster0-0a779.mongodb.net/fdmtest?retryWrites=true',
@@ -36,8 +38,5 @@ app.use(express.urlencoded({ extended: true}));
 app.use('/files', express.static(path.resolve(__dirname, '..','tmp')));
 
 app.use(require("./routes"));
-
-
-
 server.listen(process.env.PORT ||3333);
 
