@@ -16,8 +16,6 @@ io.on("connection", socket => {
     })
 });
 
-  //   mongodb+srv://mongo-user_01:<password>@cluster0-0a779.mongodb.net/test?retryWrites=true
-
 
 mongoose.connect(
     'mongodb+srv://mongo-user_01:fdm2019@cluster0-0a779.mongodb.net/fdmtest?retryWrites=true',
